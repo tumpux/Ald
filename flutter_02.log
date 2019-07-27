@@ -1,0 +1,71 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build apk
+
+## exception
+
+FileSystemException: FileSystemException: Cannot copy file to 'C:\Project\AldreyShoppingCart\Flutter-Ecommerce-App-master\build\app\outputs\apk\app.apk', path = 'C:\Project\AldreyShoppingCart\Flutter-Ecommerce-App-master\build\app\outputs\apk\release\app-release.apk' (OS Error: The process cannot access the file because it is being used by another process.
+, errno = 32)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:647:7)
+#1      _File.copySync (dart:io/file_impl.dart:352:5)
+#2      _LocalFile&LocalFileSystemEntity&ForwardingFile.copySync (package:file/src/forwarding/forwarding_file.dart:29:50)
+#3      _buildGradleProjectV2 (package:flutter_tools/src/android/gradle.dart:405:11)
+<asynchronous suspension>
+#4      buildGradleProject (package:flutter_tools/src/android/gradle.dart:300:14)
+<asynchronous suspension>
+#5      buildApk (package:flutter_tools/src/android/apk.dart:43:10)
+<asynchronous suspension>
+#6      BuildApkCommand.runCommand (package:flutter_tools/src/commands/build_apk.dart:44:11)
+<asynchronous suspension>
+#7      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:401:18)
+#8      _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#9      _rootRunUnary (dart:async/zone.dart:1132:38)
+#10     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#11     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#12     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#13     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#14     Future._complete (dart:async/future_impl.dart:476:7)
+#15     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#16     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#17     _rootRun (dart:async/zone.dart:1124:13)
+#18     _CustomZone.run (dart:async/zone.dart:1021:19)
+#19     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#20     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#21     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#22     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#23     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, v1.0.0, on Microsoft Windows [Version 10.0.17134.706], locale en-SG)
+    [32m•[39m Flutter version 1.0.0 at C:\src\flutter_windows_v1.0.0-stable\flutter
+    [32m•[39m Framework revision 5391447fae (5 months ago), 2018-11-29 19:41:26 -0800
+    [32m•[39m Engine revision 7375a0f414
+    [32m•[39m Dart version 2.1.0 (build 2.1.0-dev.9.4 f9ebf21297)
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK 28.0.3)
+    [32m•[39m Android SDK at C:\Users\tumpu\AppData\Local\Android\Sdk
+    [32m•[39m Android NDK location not configured (optional; useful for native profiling support)
+    [32m•[39m Platform android-28, build-tools 28.0.3
+    [32m•[39m ANDROID_HOME = C:\Users\tumpu\AppData\Local\Android\Sdk
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Android Studio (version 3.3)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin version 33.4.1
+    [32m•[39m Dart plugin version 182.5215
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+
+[32m[✓][39m Connected device (1 available)
+    [32m•[39m Android SDK built for x86 64 • emulator-5554 • android-x64 • Android 8.0.0 (API 26) (emulator)
+
+[32m•[39m No issues found!
+```
