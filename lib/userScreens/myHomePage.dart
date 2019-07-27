@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-    print('test yohan2 here ******************************************');
+    print('test yohan here ******************************************');
     getCurrentUser();
     super.initState();
 
