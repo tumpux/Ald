@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int countItem = 0;
   String countItemStr = "";
   bool isLoggedIn;
-  bool isAdmin;
+  bool isAdmin = false;
 
   AppMethods appMethods = new FirebaseMethods();
 
