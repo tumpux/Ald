@@ -2,39 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>765039998021-2lfgl71a58idbedfbflrbomn6e8pi35a.apps.googleusercontent.com</string>
+	<string>50048383008-s17eopslpgnr2gtl4bctsqb674clsvo7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.765039998021-2lfgl71a58idbedfbflrbomn6e8pi35a</string>
+	<string>com.googleusercontent.apps.50048383008-s17eopslpgnr2gtl4bctsqb674clsvo7</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDHEKU6CHpCFq9BLYDhtTthy0ZZkOAywZo</string>
+	<string>AIzaSyDuMf3EdWaIC9lNYwsrv-n7MW7JZ-Dh7oY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>765039998021</string>
+	<string>50048383008</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.oinder.fluttergirliesstore</string>
+	<string>com.aldreycraft.store</string>
 	<key>PROJECT_ID</key>
-	<string>girlies-b6d37</string>
+	<string>aldrey-craft</string>
 	<key>STORAGE_BUCKET</key>
-	<string>girlies-b6d37.appspot.com</string>
+	<string>aldrey-craft.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:765039998021:ios:ebf384dda9b7eae2</string>
+	<string>1:50048383008:ios:b9f33c9791112a7e</string>
 	<key>DATABASE_URL</key>
-	<string>https://girlies-b6d37.firebaseio.com</string>
+	<string>https://aldrey-craft.firebaseio.com</string>
 </dict>
 </plist>
