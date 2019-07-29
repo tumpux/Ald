@@ -158,7 +158,11 @@ class _MyHomePageState extends State<MyHomePage> {
             { 'userId': userId,
               'acctFullName': acctName,
               'confirmedPurchase': false,
-              'confirmedDate' : DateTime.now(),
+
+              // yohan 29 jul 2019
+              //'confirmedDate' : DateTime.now(),
+              'confirmedDate' : parseTime(DateTime.now()),
+
               'productId': recordTemp.productId,
               'productURL': recordTemp.productURL,
               'productPrice': recordTemp.price,

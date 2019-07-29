@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_girlies_store/tools/progressdialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 final df = new DateFormat("dd-MMM-yy hh:mm:ss");
@@ -413,3 +414,10 @@ clearDataLocally() async {
   final SharedPreferences localData = await saveLocal;
   localData.clear();
 }
+
+// yohan 29 July fix ios datetime issue
+//Ios receive the timestamps as TimeStamp and Android receive it as DateTime already.
+DateTime parseTime(dynamic date) {
+  return Platform.isIOS ? (date as Timestamp).toDate() : (date as DateTime);
+}
+
