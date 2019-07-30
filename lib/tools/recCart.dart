@@ -1,5 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// yohan 30 jul check for ios error
+import 'package:flutter_girlies_store/tools/app_tools.dart';
+
 class RecordCart {
   final DocumentReference reference;
   final String acctFullName;
@@ -21,7 +24,11 @@ class RecordCart {
   //assert(map['productURL'] != null),
         acctFullName = map ['acctFullName'],
         confirmedPurchase = map ['confirmedPurchase'],
-        confirmedDate = map ['confirmedDate'],
+
+  // yohan 30 jul check for ios error
+       // confirmedDate = map ['confirmedDate'],
+        confirmedDate = parseTime(map ['confirmedDate']),
+
         name = map['name'],
         productId = map ['productId'],
         productURL = map['productURL'],
