@@ -10,6 +10,7 @@ import 'package:flutter_girlies_store/userScreens/cartHistoryDetail.dart';
 
 
 
+
 // class have filter in stream
 
 class AppCartHistDet1 extends StatefulWidget {
@@ -312,15 +313,25 @@ class _AppCartHistDet1State extends State<AppCartHistDet1> {
         //print ('count: $count');
 
         //print ('_confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
-        if (_acctFullName != value['acctFullName'] || _confirmedDate != value['confirmedDate']) {
+
+        // yohan 01 aug
+        //if (_acctFullName != value['acctFullName'] || _confirmedDate != value['confirmedDate']) {
+        if (_acctFullName != value['acctFullName'] || _confirmedDate != parseTime(value['confirmedDate'])) {
+
+
           if (cartCustConfirmation.length == 3) {
-            print ('3 _confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
+            //print ('3 _confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
           }
           _acctFullName = value['acctFullName'];
-          _confirmedDate = value['confirmedDate'];
+
+          // yohan 01 aug
+          //_confirmedDate = value['confirmedDate'];
+          _confirmedDate = parseTime(value['confirmedDate']);
+
+
         } else {
           if (cartCustConfirmation.length == 3) {
-            print ('3 else:  _confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
+           // print ('3 else:  _confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
           }
 
           //print ('go in i to remove: $i');

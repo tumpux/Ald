@@ -303,10 +303,17 @@ class _AldreyCartHistoryState extends State<AldreyCartHistory> {
         //print ('count: $count');
 
         //print ('_confirmedDate : $_confirmedDate  value[confirmedDate] :  ${value['confirmedDate']}');
-        if (_acctFullName != value['acctFullName'] || _confirmedDate != value['confirmedDate']) {
+
+        // yohan 01 aug
+        //  if (_acctFullName != value['acctFullName'] || _confirmedDate != value['confirmedDate']) {
+        if (_acctFullName != value['acctFullName'] || _confirmedDate != parseTime(value['confirmedDate'])) {
 
           _acctFullName = value['acctFullName'];
-          _confirmedDate = value['confirmedDate'];
+
+          // yohan 01 aug
+          //_confirmedDate = value['confirmedDate'];
+          _confirmedDate = parseTime(value['confirmedDate']);
+
         } else {
 
 
